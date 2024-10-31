@@ -1,0 +1,293 @@
+/* Importação das fontes Montserrat, Lato e Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+
+:root {
+    /* Paleta 1: Verde Escuro e Verde Claro */
+    --paleta1cor1: #388E3C;
+    /* Verde Escuro */
+    --paleta4cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Paleta 2: Azul Escuro e Azul Claro */
+    --paleta2cor1: #1976D2;
+    /* Azul Escuro */
+    --paleta4cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Paleta 3: Roxo Escuro e Roxo Claro */
+    --paleta3cor1: #7B1FA2;
+    /* Roxo Escuro */
+    --paleta4cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Paleta 4: Vermelho Escuro e Vermelho Claro */
+    --paleta4cor1: #D32F2F;
+    /* Vermelho Escuro */
+    --paleta4cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Paleta 5: Azul Escuro e Azul Claro */
+    --paleta5cor1: #303F9F;
+    /* Azul Escuro */
+    --paleta4cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Paleta 6: Azul Escuro e Azul Claro */
+    --paleta6cor1: #36454F;
+    /* Chumbo Escuro */
+    --paleta6cor2: #F5F5F5;
+     /* Branco Esfumaçado */
+
+    /* Definição da cor branco esfumado */
+    --brancoEsfumacado: #F5F5F5;
+
+    /* Definição da cor chumbo escuro */
+    --chumboEscuro: #36454F;
+    /* Chumbo Escuro */
+
+    /* Fonte padrão para o corpo da página */
+    --fontBody: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Reseta as margens e preenchimento, aplica box-sizing para incluir bordas e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a fonte padrão do corpo */
+body {
+    font-family: var(--fontBody);
+}
+
+/* Estiliza o cabeçalho, centraliza o conteúdo, define altura e aplica cores */
+header {
+    background-color: var(--paleta6cor1);
+    /* Fundo azul escuro */
+    color: var(--paleta6cor2);
+    /* Texto azul claro */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-direction: column;
+    /* Coloca elementos em coluna */
+    align-items: center;
+    /* Alinha centralmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    padding: 1rem 0;
+    /* Adiciona espaçamento em torno do conteúdo */
+    height: 20vh;
+    /* Define a altura como 20% da viewport */
+}
+
+/* Estiliza o h1 do cabeçalho, aplicando a fonte Montserrat e tamanho de fonte */
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* Negrito */
+    font-size: 4rem;
+    /* Tamanho da fonte grande */
+}
+
+/* Estiliza o h2 do cabeçalho, aplicando a fonte Lato e tamanho menor */
+header h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* Normal */
+    font-size: 2rem;
+    /* Tamanho menor que h1 */
+}
+
+/* Estiliza o rodapé, centralizando o texto e aplicando cores */
+footer {
+    background-color: var(--paleta6cor1);
+    /* Fundo azul escuro */
+    color: var(--paleta6cor2);
+    /* Texto azul claro */
+    height: 5vh;
+    /* Define a altura do rodapé */
+    display: flex;
+    /* Usa flexbox para layout */
+    align-items: center;
+    /* Alinha os itens verticalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+}
+
+/* Estiliza o texto do rodapé com a fonte Roboto */
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    /* Normal */
+    font-size: 1rem;
+    /* Tamanho da fonte padrão */
+}
+
+/* Estiliza a área principal, define altura e aplica cor de fundo */
+main {
+    height: 75vh;
+    /* Define a altura como 75% da viewport */
+    background-color: var(--paleta4cor1);
+    /* Fundo azul escuro */
+    color: var(--paleta4cor2);
+    /* Texto azul claro */
+    display: flex;
+    /* Usa flexbox para layout */
+    margin: auto;
+    /* Centraliza horizontalmente */
+}
+
+/* Estiliza a seção IMC, definindo largura e altura, bordas e sombras */
+.imc {
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-direction: row;
+    /* Organiza em linha */
+    height: 70%;
+    /* Define altura relativa */
+    width: 30%;
+    /* Define largura relativa */
+    border: 5px solid var(--paleta4cor2);
+    /* Borda azul claro */
+    margin: auto;
+    /* Centraliza horizontalmente */
+    box-shadow: 5px 5px 5px var(--chumboEscuro);
+    /* Adiciona sombra */
+}
+
+/* Estiliza a seção de formulário, organizando itens em coluna */
+.formulario {
+    width: 60%;
+    /* Largura de 60% */
+    display: flex;
+    /* Usa flexbox para layout */
+    flex-direction: column;
+    /* Organiza os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens */
+    justify-content: first baseline;
+    /* Alinha ao topo */
+}
+
+/* Estiliza o título do formulário */
+.formulario h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    /* Seminegrito */
+    font-size: 1.5rem;
+    /* Tamanho médio */
+    margin-top: 10px;
+    /* Margem superior */
+    margin-bottom: 20px;
+    /* Margem inferior */
+    width: 100%;
+    /* Ocupa 100% da largura */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+/* Estiliza a área dos campos de entrada, organizando em coluna */
+.campos {
+    display: flex;
+    /* Usa flexbox */
+    flex-direction: column;
+    /* Organiza em coluna */
+    width: 90%;
+    /* Largura de 90% */
+}
+
+/* Estiliza individualmente cada campo */
+.campo {
+    display: flex;
+    /* Flexbox para layout */
+    flex-direction: column;
+    /* Organiza os elementos em coluna */
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+}
+
+/* Estiliza os rótulos dos inputs */
+.campo label {
+    font-size: 0.8rem;
+    /* Tamanho pequeno */
+    margin-bottom: 5px;
+    /* Espaçamento inferior */
+}
+
+/* Estiliza os campos de input */
+.campo input {
+    width: 100%;
+    /* Largura total */
+    height: 30px;
+    /* Altura dos inputs */
+    outline: none;
+    /* Remove borda de foco */
+    background-color: transparent;
+    /* Fundo transparente */
+    border: 2px solid var(--paleta4cor2);
+    /* Borda azul claro */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    padding-left: 5px;
+    /* Padding à esquerda */
+    padding-right: 5px;
+    /* Padding à direita */
+    color: var(--paleta4cor2);
+    /* Cor azul claro para o texto */
+    transition: all 1s ease;
+    /* Transição suave */
+}
+
+/* Estiliza o placeholder dos inputs */
+input::placeholder {
+    color: var(--paleta4cor2);
+    /* Cor azul claro */
+}
+
+/* Estiliza o estado de foco dos inputs */
+.campo input:focus {
+    background-color: transparent;
+    /* Mantém o fundo transparente */
+    border: 2px solid var(--brancoEsfumacado);
+    /* Altera a borda para branco esfumado */
+    padding-left: 10px;
+    /* Aumenta o padding à esquerda */
+    color: var(--brancoEsfumacado);
+    /* Altera a cor do texto para branco esfumado */
+}
+
+/* Estiliza o botão de envio */
+.formulario button {
+    background-color: var(--paleta4cor2);
+    /* Fundo azul claro */
+    color: var(--paleta4cor1);
+    /* Texto azul escuro */
+    border: 2px solid var(--paleta4cor2);
+    /* Borda azul claro */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    width: 100%;
+    /* Largura total */
+    height: 30px;
+    /* Altura do botão */
+    font-size: 1.3rem;
+    /* Tamanho da fonte maior */
+    transition: all 1s ease;
+    /* Transição suave */
+    margin-top: 20px;
+    /* Espaçamento superior */
+    cursor: pointer;
+    /* Altera o cursor para ponteiro */
+}
+
+/* Estiliza o botão de envio no estado hover */
+.formulario button:hover {
+    background-color: transparent;
+    /* Fundo transparente no hover */
+    color: var(--paleta4cor2);
+    /* Texto azul claro no hover */
+}
