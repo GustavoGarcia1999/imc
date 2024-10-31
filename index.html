@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Declara o documento como HTML5 e define o idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8, garantindo compatibilidade com caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura o viewport para dispositivos móveis, garantindo que a página seja redimensionada corretamente -->
+
+    <title>IMC</title>
+    <!-- Define o título da aba do navegador -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Vincula o arquivo de estilos CSS externo -->
+</head>
+
+<body></body>
+    <!-- Início do corpo do documento -->
+
+    <header>
+        <!-- Cabeçalho da página -->
+        <h1>IMC</h1>
+        <!-- Título principal da página -->
+        <h2>Índice de Massa Corporal</h2>
+        <!-- Subtítulo explicando o propósito da página -->
+    </header>
+
+    <main>
+        <!-- Conteúdo principal da página -->
+        <section class="imc">
+            <!-- Seção principal para o cálculo do IMC -->
+
+            <img src="./img/imc.jpg" alt="">
+            <!-- Imagem representativa sobre IMC, com link relativo para o arquivo de imagem -->
+
+            <section class="formulario">
+                <!-- Seção que contém o formulário de cálculo do IMC -->
+                <h3>Calcule o seu IMC</h3>
+                <!-- Título da seção do formulário -->
+
+                <form onsubmit="calcularImc();">
+                    <!-- Início do formulário de cálculo -->
+                    <section class="campos">
+                        <!-- Seção agrupando todos os campos do formulário -->
+
+                        <section class="campo">
+                            <!-- Campo do formulário para o nome -->
+                            <label for="nome">Nome</label>
+                            <!-- Rótulo para o campo do nome -->
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                            <!-- Entrada de texto para o nome, com placeholder e campo obrigatório -->
+                        </section>
+
+                        <section class="campo">
+                            <!-- Campo do formulário para o peso -->
+                            <label for="peso">Peso (Kg)</label>
+                            <!-- Rótulo para o campo do peso -->
+                            <input type="number" name="peso" id="peso" value="30" step="1" min="30" max="400" required>
+                            <!-- Entrada numérica para o peso com valor mínimo de 30 kg, máximo de 400 kg, com incremento de 1 kg -->
+                        </section>
+
+                        <section class="campo">
+                            <!-- Campo do formulário para a altura -->
+                            <label for="altura">Altura (m)</label>
+                            <!-- Rótulo para o campo da altura -->
+                            <input type="number" name="altura" id="altura" value="1.5" step="0.01" min="1.0" max="2.50"
+                                required>
+                            <!-- Entrada numérica para a altura, com valor mínimo de 1.0 m e máximo de 2.50 m, com incremento de 0.01 m -->
+                        </section>
+
+                    </section>
+                    <!-- Fim da seção dos campos do formulário -->
+
+                    <button>Calcular</button>
+                    <!-- Botão para submeter o formulário e calcular o IMC -->
+                </form>
+                <!-- Fim do formulário -->
+            </section>
+            <!-- Fim da seção do formulário -->
+        </section>
+        <!-- Fim da seção principal do IMC -->
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+        <p>Desenvolvido por Gustavo Garcia &reg;</p>
+        <!-- Texto do rodapé com o nome do desenvolvedor -->
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+    
+</body>
+
+</html>
